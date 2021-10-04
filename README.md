@@ -4,4 +4,5 @@ Word2vec is a technique for natural language processing published in 2013. The w
 **This is an attempt to implement the original paper using Pytorch**- [Efficient Estimation of Word Representations in
 Vector Space](https://arxiv.org/abs/1301.3781).   
 
+**Dataset Used: [text8](http://mattmahoney.net/dc/textdata.html)** () 
 Word2vec can utilize either of two model architectures to produce a distributed representation of words: continuous bag-of-words (CBOW) or continuous skip-gram. In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words. According to the authors' note, CBOW is faster while skip-gram does a better job for infrequent words.
